@@ -1,4 +1,5 @@
 #About InfoToday
+
 InfoToday is your trusted digital destination for the latest updates in national and international news, technology, sports, and more.
 
 Our mission is to provide timely, accurate, and reliable news articles that empower our readers with knowledge and insights.
