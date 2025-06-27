@@ -5,6 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>InfoToday - Home</title>
   <link rel="stylesheet" href="css/style.css">
+   <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    header, footer {
+      background-color: #f9f9f9;
+      color: black;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: #0077cc;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    main {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    #news-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .news-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease;
+    }
+    .news-card:hover {
+      transform: translateY(-5px);
+    }
+    .news-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .news-card-content {
+      padding: 15px;
+    }
+    .news-card h2 {
+      font-size: 1.2em;
+      margin: 0 0 10px;
+    }
+    .news-card p {
+      font-size: 0.95em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .news-card small {
+      color: #777;
+      font-size: 0.85em;
+    }
+  </style>
 </head>
 <body>
   <header>
