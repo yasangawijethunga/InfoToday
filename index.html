@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InfoToday - Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    header, footer {
+      background-color: #f9f9f9;
+      color: black;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: #0077cc;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    main {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    #news-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .news-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+    .news-card:hover {
+      transform: translateY(-5px);
+    }
+    .news-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .news-card-content {
+      padding: 15px;
+    }
+    .news-card h2 {
+      font-size: 1.2em;
+      margin: 0 0 10px;
+    }
+    .news-card p {
+      font-size: 0.95em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .news-card small {
+      color: #777;
+      font-size: 0.85em;
+    }
+    .view-more {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .view-more a {
+      padding: 10px 20px;
+      background-color: #0077cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .view-more a:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>InfoToday</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="news.php">News</a>
+      <a href="about.php">About</a>
+      <a href="contact.php">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Latest News</h2>
+    <section id="news-section">
+      <a class="news-card" href="news.html">
+        <img src="uploads/sample1.jpg" alt="News Image" />
+        <div class="news-card-content">
+          <h2>New Tech Trends in 2025</h2>
+          <p>Explore the upcoming technology trends that are expected to shape industries in 2025...</p>
+          <small>Published on 2025-06-20</small>
+        </div>
+      </a>
+      <a class="news-card" href="news.html">
+        <img src="uploads/sample2.jpg" alt="News Image" />
+        <div class="news-card-content">
+          <h2>AI Making Waves in Media</h2>
+          <p>Artificial intelligence is changing how we consume news and entertainment. Here's how...</p>
+          <small>Published on 2025-06-18</small>
+        </div>
+      </a>
+      <a class="news-card" href="news.html">
+        <img src="uploads/sample3.jpg" alt="News Image" />
+        <div class="news-card-content">
+          <h2>Global Climate Awareness Grows</h2>
+          <p>More communities are coming together to promote sustainability and fight climate change...</p>
+          <small>Published on 2025-06-15</small>
+        </div>
+      </a>
+    </section>
+    <div class="view-more">
+      <a href="news.html">View More News</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 InfoToday. All rights reserved.</p>
+  </footer>
+</body>
+</html>
