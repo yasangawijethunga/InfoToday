@@ -1,5 +1,6 @@
 <?php
 include __DIR__ . '/../db/config.php';
+$result = mysqli_query($conn, "SELECT * FROM articles ORDER BY created_at DESC LIMIT 3");
 
 echo '<div style="display: grid; gap: 20px;">';
 while ($row = mysqli_fetch_assoc($result)) {
